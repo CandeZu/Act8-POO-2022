@@ -6,10 +6,10 @@ class Conjunto:
 
     def cargar(self):
         self.__lista = []
-        print("INGRESE LOS ELEMENTOS DEL CONJUNTO, PARA FINALIZAR INGRESE: FIN")
+        print("INGRESE LOS ELEMENTOS DEL CONJUNTO, PARA FINALIZAR INGRESE: 0")
         while True:
             elem = int(input("ELEMENTO: "))
-            if(elem == "FIN"):
+            if(elem == "0"):
                 break
             self.__lista.append(elem)
             self.__lista.sort()
