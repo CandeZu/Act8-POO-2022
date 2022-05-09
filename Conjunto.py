@@ -6,18 +6,15 @@ class Conjunto:
 
     def cargar(self):
         self.__lista = []
-        print("INGRESE LOS ELEMENTOS DEL CONJUNTO")
+        print("INGRESE LOS ELEMENTOS DEL CONJUNTO, PARA FINALIZAR INGRESE: FIN")
         while True:
             elem = int(input("ELEMENTO: "))
-            if(elem == 0):
+            if(elem == "FIN"):
                 break
             self.__lista.append(elem)
             self.__lista.sort()
         print("CONJUNTO CARGADO CON EXITO")
 
-    # def __str__(self):
-    #     print("CONJUNTO: ")
-    #     print(self.__lista)
 
     def mostrarConj(self):
         print("CONJUNTO: ")
